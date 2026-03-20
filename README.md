@@ -328,8 +328,6 @@ Clean CSS and Bootstrap‑style structure
 
 ## 📸 Screenshots
 
-Add screenshots here once your UI is ready:
-
 assets/images/screenshot-home.png
 assets/images/screenshot-forecast.png
 
@@ -343,6 +341,8 @@ assets/images/screenshot-forecast.png
 - Tested error handling with invalid city names.  
 - Verified API responses and DOM updates.
 
+## 🧪 Testing Summary
+
 ---
 
 ## 📦 Deployment
@@ -351,6 +351,7 @@ assets/images/screenshot-forecast.png
 
 ## 📝 Future Enhancements
 
+- Stop duplicate search for cities and dispaly them in the "Recent Searches"
 - Search history saved in localStorage  
 - Dark mode toggle  
 - Geolocation support (“Use my location”)  
@@ -363,4 +364,16 @@ assets/images/screenshot-forecast.png
 
 - OpenWeather API  
 - Bootstrap  
-- Google Fonts  
+- Google Fonts
+- ## Credits 
+
+- I generated some of the code with Microsoft Copilot's assistance.
+- This project was developed by Zsolt Földes as part of the Code Institute Full Stack Software Development diploma.
+- Development & Design: Created by Zsolt Földes as part of the Code Institute Full Stack Software Development Diploma.
+- Frameworks & Libraries: Built with Bootstrap for responsive layout and Font Awesome for icons.
+- Some code snippets, layout refinements, and documentation guidance were created with the assistance of Microsoft Copilot.
+- I used Microsoft Copilot to assist with troubleshooting layout issues, refining README documentation, and polishing responsive design. All code was reviewed, tested, and integrated by me.
+- I got assistance with code debugging from Microsoft Copilot for this project.
+- I had an issue with this project. The repository was created by mistake in https://github.com/Zsolt68/vscode-projects/tree/main/weather-dashboard. You will find the old commits in there.
+- I had to create a new repository called "weather-dashboard-pp2" to be able to have a live URL and to be able to upload the project to Code Institute.
+
