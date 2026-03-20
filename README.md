@@ -391,7 +391,7 @@ assets/images/screenshot-forecast.png
 - OpenWeather API  
 - Bootstrap  
 - Google Fonts
-- ## Credits 
+- Microsoft Copilot for debugging and documentation support.
 
 - I generated some of the code with Microsoft Copilot's assistance.
 - This project was developed by Zsolt Földes as part of the Code Institute Full Stack Software Development diploma.
