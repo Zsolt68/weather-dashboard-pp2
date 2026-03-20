@@ -356,7 +356,33 @@ assets/images/screenshot-forecast.png
 - Dark mode toggle  
 - Geolocation support (“Use my location”)  
 - Custom weather icons  
-- Animated backgrounds based on weather conditions  
+- Animated backgrounds based on weather conditions
+
+                     ┌──────────────────────────┐
+                     │     Current Version       │
+                     │  (Search + Forecast + UI) │
+                     └──────────────┬───────────┘
+                                    ▼
+                    ┌────────────────────────────┐
+                    │   Add Geolocation Feature   │
+                    │  ("Use My Location" button) │
+                    └──────────────┬─────────────┘
+                                   ▼
+                 ┌──────────────────────────────────┐
+                 │ Add Temperature Unit Toggle       │
+                 │ (Switch between °C and °F)        │
+                 └──────────────┬───────────────────┘
+                                ▼
+           ┌────────────────────────────────────────────┐
+           │ Add Hourly Forecast                         │
+           │ (Next 24 hours)                             │
+           └──────────────┬─────────────────────────────┘
+                          ▼
+     ┌────────────────────────────────────────────────────────┐
+     │ Add Weather Alerts                                      │
+     │ (Storm warnings, heat alerts, etc.)                     │
+     └────────────────────────────────────────────────────────┘
+
 
 ---
 
