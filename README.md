@@ -1,6 +1,6 @@
 # 🌤️ Weather Dashboard
 
-<img src="assets/docs/intothewoods-responsive.png" alt="An image representing how the site looks across different devices of varying size.">
+<img src="flat-devices-mockup.png" alt="An image representing how the site looks across different devices of varying size.">
 ## 📱 Responsive Mockup
 
 ![Responsive Mockup](responsive_mockup.png)
