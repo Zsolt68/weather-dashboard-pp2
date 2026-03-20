@@ -53,6 +53,18 @@ The Lighthouse tool within the Chrome Developer Tools has been used to test perf
 
 The JavaScript file tested with JSHint returned no errors.
 
+### Testing Table
+
+
+Feature	Expected Result	Test Performed	Result	Pass/Fail
+Search bar	User enters city, weather loads	Typed “Dublin”	Weather displayed	✔️ Pass
+Invalid city	Error message shown	Typed “asdfgh”	Error displayed: City not found, Try again.	✔️ Pass
+Recent searches	Buttons appear and work	Clicked for 8 saved city	Weather loads	✔️ Pass
+5‑day forecast	Shows 5 cards	Searched multiple cities	All cards visible	✔️ Pass
+Responsiveness	Layout adjusts	Tested on mobile/tablet	Works correctly	✔️ Pass
+API connection	Data loads	Checked network calls	Successful	✔️ Pass
+
+
 ### Testing User Goals
 
 > * Search for a city and display the city's name and current temperature.
@@ -94,7 +106,7 @@ Full testing was performed on the following devices:
 
 ### Known Bugs
 
-There are currently no known bugs in this version of the site.
+The Weather Dashboard does not display the right temperature for Dublin because the OpenWeather API does not render the weather details correctly for it. It is not a bug in my coding.
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
