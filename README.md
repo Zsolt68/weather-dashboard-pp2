@@ -1,9 +1,8 @@
 # 🌤️ Weather Dashboard
 
 <img src="flat-devices-mockup.png" alt="An image representing how the site looks across different devices of varying size.">
-## 📱 Responsive Mockup
 
-![Responsive Mockup](responsive_mockup.png)
+By Zsolt Földes.
 
 
 🌍 View the live project here 👉 https://zsolt68.github.io/weather-dashboard-pp2/
@@ -13,14 +12,14 @@ A responsive, interactive weather application that allows users to search for an
 By Zsolt Földes.
 
 ---
-# 📝 Professional Introduction
+## 📝 Professional Introduction
 
 This Weather Dashboard was created for the Code Institute’s Portfolio Project 2 (JavaScript Essentials). The goal of the project was to build a dynamic, user‑driven application that consumes a public API, updates the DOM in real time, and provides a clean, intuitive user experience. The project showcases my ability to write modular JavaScript, handle asynchronous API calls, manage localStorage, and design a responsive interface suitable for all device sizes.
 
 ## 📁 Project Structure
 
 weather-dashboard/
-│
+├── flat-devices-mockup.png
 ├── index.html
 ├── style.css
 ├── script.js
@@ -202,6 +201,13 @@ CURRENT WEATHER
                                                                |
 +--------------------------------------------------------------+
 
+weather-dashboard/
+│
+├── index.html
+├── style.css
+├── script.js
+├── test.md
+└── README.md
 
 
 ## 🚀 Features
