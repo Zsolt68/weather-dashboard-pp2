@@ -9,9 +9,7 @@
     * [W3C Validator](#w3c-validator)
     * [Lighthouse](#lighthouse)
     * [JSHint](#jshint)
-    * [Accessibility Testing](#accessibility-testing)
 * [Manual Testing](#manual-testing)
-    * [Testing User Stories](#testing-user-stories)
     * [Full Testing](#full-testing)
 * [Bugs](#bugs)
     * [Solved Bugs](#solved-bugs)
@@ -73,6 +71,43 @@ The weather dashboard is designed to be a simple way to search for a city name, 
 
 > * Be able to collect multiple/8 cities' searches and display them on the weather dashboard.
 
+### Testing Summary
+
+Functional Testing
+Search functionality
+
+API response validation
+
+DOM updates
+
+Error handling
+
+Recent search behaviour
+
+✔️ Responsiveness Testing
+Mobile
+
+Tablet
+
+Desktop
+
+✔️ Browser Compatibility
+Chrome
+
+Firefox
+
+Edge
+
+Safari
+
+✔️ Validator Testing
+W3C HTML
+
+W3C CSS
+
+JSHint
+
+
 ### Full Testing
 
 Full testing was performed on the following devices:
@@ -95,13 +130,10 @@ Full testing was performed on the following devices:
 
 ### Solved Bugs
 
-| # | Issue | Details | What was done | Fixed? |
+| # | Bug | Description | Fix implemented | Fixed? |
 | --- | --- | --- | --- | --- |
-| 1 | Filepath issues between vscode and github deployment | Filepaths for styles and scripts were not working when deployed to github pages | Filepaths were updated to work with github deployment | __Yes__ |
-| 2 | Inventory | Inventory items were not being removed when the game was reset | Added a function to remove all items from the inventory when the game is reset | __Yes__ |
-| 3 | Duplicated endings | When the same ending was reached it would appear multiple times in the achievements modal | Add an if statement to check whether the ending has already been collected | __Yes__ |
-| 4 | Dynamic background | Inclusion of dynamic backgrounds to the game container not working as expected | Feature was removed to allow for more time to work on other features and has been added to the future implementations section | __Removed__ |
-| 5 | Typewriter effect | Typewriter effect for the game text nodes not working due to inclusion of HTML within the text nodes | Typewriter effect was removed to allow for more time to work on other features and has been added to the future implementations section | __Removed__ |
+| 1 | Layout breaking on mobile | Cards overflowed screen | Added responsive CSS | __Yes__ |
+| 2 |  Dublin's temperature is wrong | The app does not dislays the right temperature for Dublin, Ireland | I cannot fix this because it is the wrong data from the OpenWeather API> ineed to change the API for this project to rectify the issue | __No__ |
 
 
 ### Known Bugs
