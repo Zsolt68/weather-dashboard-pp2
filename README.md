@@ -239,26 +239,18 @@ Users can enter any city name to retrieve weather data instantly.
 
 ## 📅 Current Weather Panel
 Displays:
-
 Temperature
-
 Humidity
-
 Wind speed
-
 Weather icon
 
 City name and date
 
 ## 📆 5‑Day Forecast
 Each forecast card includes:
-
 Date
-
 Temperature
-
 Humidity
-
 Weather icon
 
 ## 🕘 Recent Searches
@@ -283,6 +275,30 @@ Clean CSS and Bootstrap‑style structure
 
 ---
 
+🔄 Flowchart
+
+          ┌──────────────────────┐
+          │ User enters city name│
+          └──────────┬───────────┘
+                     ▼
+        ┌────────────────────────────┐
+        │ Fetch coordinates from API │
+        └──────────┬─────────────────┘
+                   ▼
+     ┌───────────────────────────────┐
+     │ Fetch weather data (current + │
+     │ 5‑day forecast)               │
+     └──────────┬────────────────────┘
+                ▼
+     ┌───────────────────────────────┐
+     │ Update DOM with weather data  │
+     └──────────┬────────────────────┘
+                ▼
+     ┌───────────────────────────────┐
+     │ Save search to localStorage   │
+     └───────────────────────────────┘
+
+
 ## 🛠️ Technologies Used
 
 - HTML5  
@@ -292,13 +308,6 @@ Clean CSS and Bootstrap‑style structure
 - OpenWeather API: https://home.openweathermap.org/
 - Google Fonts (Inter)
 
----
-
-## 🌐 Live Demo
-
-Add your deployed link here once hosted on GitHub Pages:
-
-https://yourusername.github.io/weather-dashboard/
 ---
 
 ## 🔧 How It Works
@@ -337,13 +346,6 @@ assets/images/screenshot-forecast.png
 ---
 
 ## 📦 Deployment
-
-To deploy using GitHub Pages:
-
-1. Push your project to a GitHub repository.  
-2. Go to **Settings → Pages**.  
-3. Select the `main` branch and `/root` folder.  
-4. Save and wait for the deployment link.
 
 ---
 
