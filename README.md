@@ -1,6 +1,10 @@
 # 🌤️ Weather Dashboard
 
 <img src="assets/docs/intothewoods-responsive.png" alt="An image representing how the site looks across different devices of varying size.">
+## 📱 Responsive Mockup
+
+![Responsive Mockup](responsive_mockup.png)
+
 
 🌍 View the live project here 👉 https://zsolt68.github.io/weather-dashboard-pp2/
 
