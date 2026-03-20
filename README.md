@@ -2,14 +2,14 @@
 
 <img src="assets/docs/intothewoods-responsive.png" alt="An image representing how the site looks across different devices of varying size.">
 
-View the live project here > (https://zsolt68.github.io/weather-dashboard-pp2/)
+🌍 View the live project here 👉 https://zsolt68.github.io/weather-dashboard-pp2/
 
 A responsive, interactive weather application that allows users to search for any city and instantly view current weather conditions along with a 5‑day forecast. This project demonstrates API integration, DOM manipulation, responsive UI design, and clean JavaScript logic. It was developed as part of the Code Institute Portfolio Project 2. Built with HTML, CSS, JavaScript, Bootstrap, and the OpenWeather API.
 
 By Zsolt Földes.
 
 ---
-# Professional Introduction
+# 📝 Professional Introduction
 
 This Weather Dashboard was created for the Code Institute’s Portfolio Project 2 (JavaScript Essentials). The goal of the project was to build a dynamic, user‑driven application that consumes a public API, updates the DOM in real time, and provides a clean, intuitive user experience. The project showcases my ability to write modular JavaScript, handle asynchronous API calls, manage localStorage, and design a responsive interface suitable for all device sizes.
 
@@ -62,10 +62,7 @@ Recent Searches:
 | • Corfu|
 | • Ballinteer|
 
-
-
 +---------------------------+
-
 
 RIGHT COLUMN (approx. 65–70% width)
 -----------------------------------
