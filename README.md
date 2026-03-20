@@ -45,7 +45,7 @@ weather-dashboard/
 | LEFT COLUMN (Search + History)        | RIGHT COLUMN (Weather)|
 |--------------------------------------------------------------|
 
-LEFT COLUMN (approx. 30–35% width)
+ LEFT COLUMN (approx. 30–35% width)
 ----------------------------------
 [ Search for a City ]
 +--------------------------------------------------+
@@ -67,7 +67,7 @@ Recent Searches:
 
 +---------------------------+
 
-RIGHT COLUMN (approx. 65–70% width)
+ RIGHT COLUMN (approx. 65–70% width)
 -----------------------------------
 
 CURRENT WEATHER
@@ -97,120 +97,182 @@ CURRENT WEATHER
 
 ## Divs structure in this project
 
-+--------------------------------------------------------------+
-<! -- Outer page wrapper-->
-| <div class="container">                                      |
-| <!-- Header section -->                                      
-|   <header>                                                   |
-|     <h1>Weather Dashboard</h1>                               |
-|   </header>                                                  |
-| <!-- MAIN GRID (LEFT + RIGHT COLUMNS) -->
-|<main class="row">                                         |   
-|     <!-- LEFT COLUMN -->                                     |
-|     <div class="col-12 col-md-4"> 
-               <!-- SEARCH SECTION -->            |                                                   
-|       <section id="search-section">                          |
-|         <h2>Search for a City</h2>                           |
-|            <!-- Search form -->                               
-|         <form id="search-form">                              |
-|           <input id="city-input">                            |
-|           <button id="search-btn">Search</button>            |
-|         </form>
+---
 
-<!-- SEARCH MESSAGE (errors, info, etc.) -->
-|<div id="search-message"></div>                      |
-|       </section>                                             |
-|<!-- SEARCH HISTORY SECTION -->                                
-|       <section id="history-section">                         |
-|         <h3>Recent Searches</h3>
- <!-- LIST WHERE JS WILL INSERT HISTORY BUTTONS -->
-|         <ul id="history-list"></ul>                          |
-|       </section>                                              
-</div>  <!-- END LEFT COLUMN -- >                               
-|     <!-- RIGHT COLUMN -->                                    |
-|     <div class="col-12 col-md-8">                            |
-| 
-<!-- CURRENT WEATHER SECTION -->
-|<section id="current-weather">                         |
-|         <h2>Current Weather</h2>                             |
-|
-<!-- CURRENT WEATHER CARD -->
-|         <div id="current-weather-card" class="card">         |
-|           <div class="card-body">                            |
-|    <!-- CITY NAME -->
- <h3 id="current-city">City Name</h3>
-<!-- DATE -->
-|             <p id="current-date">Date</p>                    |
+## 🧱 HTML Structure (Divs)
 
-| <!-- MAIN WEATHER ROW (ICON + TEMP + DESCRIPTION) -->
-|             <div id="current-main" class="d-flex">           |
-|               <img id="current-icon">                        |
-|               <div>                                          |
-|                 <p id="current-temp">12°C</p>                |
-|                 <p id="current-description">Sunny</p>        
-|               </div>                                         |
-|             </div>                                           |
-| <!-- WEATHER DETAILS GRID -->
-|             <div id="current-details" class="row">           |
-|               <div class="col">                              |
-|                 <span>Feels like:</span>                     |
-|                 <span id="current-feels-like">12°C</span>    |
-|               </div>                                         |
-|               <div class="col">                              |
-|                 <span>Humidity:</span>                       |
-|                 <span id="current-humidity">82%</span>       
-|               </div>                                         |
-|               <div class="col">                              |
-|                 <span>Wind:</span>                           |
-|                 <span id="current-wind">5m/s</span>          |
-|               </div>                                         |
-|               <div class="col">                              |
-|                 <span>Pressure:</span>                       |
-|                 <span id="current-pressure">1012 hPa</span>  |
-|               </div>                                         |
-|             </div>                                           |
-|                                                              |
-|           </div>                                             |
-|         </div>                                               |
-|  <!-- EMPTY STATE MESSAGE -->                                                          
-|         <p id="current-empty"> Search for a city to see the weather.
-</p>                           |
-|       </section>                                            |
-|<!-- FORECAST -->                                      |
-|       <section id="forecast">                                |
-|         <h2>5-Day Forecast</h2>
-<!-- FORECAST CARDS ROW -->
-|         <div id="forecast-cards" class="row">                |
-|           <!-- JS injects 5 cards here -->  
-<div>Day 1</div>
-<div>Day 2</div>
-<div>Day 3</div>
-<div>Day 4</div>
-<div>Day 5</div>
-|</div> |
-|<!-- EMPTY STATE MESSAGE -->                                   
-|         <p id="forecast-empty">Forecast will appear here.
-</p>
-|       </section>                                             |
-|                                                              |
-|     </div>  <!-- END RIGHT COLUMN -->                        |
-|                                                              |
-|   </main>                                                    |
-|                                                              |
-| </div> <!-- END PAGE WRAPPER -->
-                                                               |
-+--------------------------------------------------------------+
+```html
+<!-- Outer page wrapper -->
+<div class="container">
 
-weather-dashboard/
-│
-├── index.html
-├── style.css
-├── script.js
-├── test.md
-└── README.md
+  <!-- Header section -->
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
 
+  <!-- MAIN GRID (LEFT + RIGHT COLUMNS) -->
+  <main class="row">
+
+    <!-- LEFT COLUMN -->
+    <div class="col-12 col-md-4">
+
+      <!-- SEARCH SECTION -->
+      <section id="search-section">
+        <h2>Search for a City</h2>
+
+        <!-- Search form -->
+        <form id="search-form">
+          <input id="city-input">
+          <button id="search-btn">Search</button>
+        </form>
+
+        <!-- SEARCH MESSAGE (errors, info, etc.) -->
+        <div id="search-message"></div>
+      </section>
+
+      <!-- SEARCH HISTORY SECTION -->
+      <section id="history-section">
+        <h3>Recent Searches</h3>
+
+        <!-- LIST WHERE JS WILL INSERT HISTORY BUTTONS -->
+        <ul id="history-list"></ul>
+      </section>
+
+    </div> <!-- END LEFT COLUMN -->
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-12 col-md-8">
+
+      <!-- CURRENT WEATHER SECTION -->
+      <section id="current-weather">
+        <h2>Current Weather</h2>
+
+        <!-- CURRENT WEATHER CARD -->
+        <div id="current-weather-card" class="card">
+          <div class="card-body">
+
+            <!-- CITY NAME -->
+            <h3 id="current-city">City Name</h3>
+
+            <!-- DATE -->
+            <p id="current-date">Date</p>
+
+            <!-- MAIN WEATHER ROW (ICON + TEMP + DESCRIPTION) -->
+            <div id="current-main" class="d-flex">
+              <img id="current-icon">
+              <div>
+                <p id="current-temp">12°C</p>
+                <p id="current-description">Sunny</p>
+              </div>
+            </div>
+
+            <!-- WEATHER DETAILS GRID -->
+            <div id="current-details" class="row">
+              <div class="col">
+                <span>Feels like:</span>
+                <span id="current-feels-like">12°C</span>
+              </div>
+              <div class="col">
+                <span>Humidity:</span>
+                <span id="current-humidity">82%</span>
+              </div>
+              <div class="col">
+                <span>Wind:</span>
+                <span id="current-wind">5 m/s</span>
+              </div>
+              <div class="col">
+                <span>Pressure:</span>
+                <span id="current-pressure">1012 hPa</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EMPTY STATE MESSAGE -->
+        <p id="current-empty">Search for a city to see the weather.</p>
+      </section>
+
+      <!-- FORECAST SECTION -->
+      <section id="forecast">
+        <h2>5-Day Forecast</h2>
+
+        <!-- FORECAST CARDS ROW -->
+        <div id="forecast-cards" class="row">
+          <!-- JS injects 5 cards here -->
+          <div>Day 1</div>
+          <div>Day 2</div>
+          <div>Day 3</div>
+          <div>Day 4</div>
+          <div>Day 5</div>
+        </div>
+
+        <!-- EMPTY STATE MESSAGE -->
+        <p id="forecast-empty">Forecast will appear here.</p>
+      </section>
+
+    </div> <!-- END RIGHT COLUMN -->
+
+  </main>
+
+</div> <!-- END PAGE WRAPPER -->
+
+## 🎯 User Goals
+First‑time users want to:
+Quickly find weather information for a city
+
+Understand the layout without instructions
+
+See clear, readable weather data
+
+Returning users want to:
+Re‑use recent searches
+
+Navigate the dashboard easily
+
+Access accurate, up‑to‑date weather data
 
 ## 🚀 Features
+
+## 🔍 Search Bar
+Users can enter any city name to retrieve weather data instantly.
+
+## 📅 Current Weather Panel
+Displays:
+
+Temperature
+
+Humidity
+
+Wind speed
+
+Weather icon
+
+City name and date
+
+## 📆 5‑Day Forecast
+Each forecast card includes:
+
+Date
+
+Temperature
+
+Humidity
+
+Weather icon
+
+## 🕘 Recent Searches
+Automatically saved using localStorage
+
+Clickable buttons for quick access
+
+Clears and updates dynamically
+
+##📱 Fully Responsive Layout
+
+Works on mobile, tablet, and desktop
+
+Clean CSS and Bootstrap‑style structure
 
 - **City Search** — Enter any city name to retrieve live weather data.  
 - **Current Weather Display** — Temperature, conditions, humidity, wind speed, and weather icon.  
